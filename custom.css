@@ -1,0 +1,130 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu+Mono&display=swap');
+
+:root {
+  --carbon-black: 43, 43, 43;
+  --carbon-highlight: 65, 65, 65;
+  --carbon-darker: 30, 30, 30;
+  --white: 255, 255, 255;
+  --accent: 255, 255, 255;
+  --rounding: 8px;
+}
+
+html, body {
+  background-color: rgb(var(--carbon-black)) !important;
+  color: rgb(var(--white)) !important;
+  font-family: 'Ubuntu Mono', monospace !important;
+}
+
+h1, h2, h3, h4, h5, h6,
+.sectionTitle,
+.itemName,
+.detailSectionContent {
+  font-family: 'Ubuntu Mono', monospace !important;
+  font-weight: 400;
+  color: rgb(var(--white)) !important;
+}
+
+a, a:visited {
+  color: rgb(var(--white));
+}
+
+.emby-button,
+.paper-icon-button-light,
+.button-flat,
+.raised {
+  background-color: rgba(var(--white), 0.06);
+  color: rgb(var(--white));
+  border: none;
+  border-radius: var(--rounding);
+  transition: background 0.3s ease;
+}
+
+.emby-button:hover,
+.paper-icon-button-light:hover,
+.button-flat:hover,
+.raised:hover {
+  background-color: rgba(var(--white), 0.15);
+}
+
+.card,
+.cardImage,
+.cardContent,
+.dialog,
+.toast,
+.itemBackdrop,
+.backgroundContainer {
+  background-color: rgb(var(--carbon-darker)) !important;
+  border-radius: var(--rounding);
+  box-shadow: 0 0 16px rgba(0, 0, 0, 0.3);
+}
+
+input, textarea, select {
+  background-color: rgb(var(--carbon-highlight)) !important;
+  color: rgb(var(--white)) !important;
+  border: none !important;
+  border-radius: var(--rounding);
+  padding: 0.6em;
+}
+
+input:focus, textarea:focus, select:focus {
+  outline: none !important;
+  background-color: rgba(var(--white), 0.08);
+}
+
+#loginPage {
+  background: linear-gradient(to bottom right, rgba(43,43,43,0.9), rgba(20,20,20,0.9)), url('https://images.unsplash.com/photo-1601987077552-11b76d1eeb3b?fit=crop&w=1280&q=80') no-repeat center center !important;
+  background-size: cover !important;
+}
+
+#loginPage h1 {
+  font-size: 1.5em !important;
+  text-align: center;
+  color: rgb(var(--white));
+}
+
+.dashboardFooter::after {
+  content: "Cinematic UI";
+  font-size: 0.8em;
+  color: rgba(var(--white), 0.5);
+  font-style: italic;
+}
+
+::-webkit-scrollbar {
+  width: 6px;
+}
+::-webkit-scrollbar-thumb {
+  background-color: rgba(var(--white), 0.3);
+  border-radius: 10px;
+}
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+.sectionTitle {
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  font-weight: bold;
+  border-bottom: 1px solid rgba(var(--white), 0.2);
+  padding-bottom: 0.4em;
+  margin-bottom: 1em;
+}
+
+.itemProgressBar,
+.taskProgressInner {
+  background-color: rgba(var(--white), 0.3) !important;
+}
+
+.navMenuOption,
+.navMenuOption-selected {
+  background-color: rgba(var(--white), 0.05);
+  border-radius: var(--rounding);
+  color: rgb(var(--white)) !important;
+  transition: 0.2s;
+}
+.navMenuOption:hover {
+  background-color: rgba(var(--white), 0.15);
+}
+
+.cardOverlayButtonIcon {
+  color: rgb(var(--white));
+}
